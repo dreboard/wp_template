@@ -1,0 +1,149 @@
+/*
+Theme Name: WP Bootstrap
+Theme URI: https://github.com/dreboard
+Author: the WordPress team
+Author URI: https://github.com/dreboard
+Description: Features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wpbootstrap
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+    padding-top: 50px;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.carousel-item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+    content: '>';
+    font-size: 55px;
+    color: black;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: black;
+}
+
+.carousel-caption {
+    color: #000;
+}
+.portfolio-item {
+    margin-bottom: 30px;
+}
+.front_hdr{
+    margin-bottom: 15px;
+}
+footer {
+    color: #fff;
+}
+
+h1 small {
+    font-size: 20px;
+}
+
+/*
+sidebar.php
+*/
+.searchform label {
+    display:none;
+}
+
+/*
+comments.php
+*/
+.commentBox {
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-image: url(bg.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.comments{
+    border:1px #ccc solid;
+    padding:10px;
+    margin-bottom:20px;
+    margin-top:10px;
+}
+
+.comments h3,.comments h2{
+    padding:5px;
+}
+
+.comment-body{
+    border:#ccc solid 1px;
+    margin-bottom:10px;
+    padding:20px 10px;
+}
+
+.comment-meta{
+
+    padding:10px;
+    overflow:auto;
+}
+
+.comment-meta a{
+    color:#fff;
+}
+
+.comment-meta img{
+    float:left;
+    margin-right:10px;
+}
+
+.comment-reply-link{
+    background:#777;
+    color:#fff;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.comment-form input, .comment-form textarea{
+    width:100%;
+    padding:4px;
+    border:#ccc solid 1px;
+    margin-bottom:15px;
+}
+div.comments li {
+    list-style: none;
+}
